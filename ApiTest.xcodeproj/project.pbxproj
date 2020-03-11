@@ -21,6 +21,8 @@
 		529330332419068400976FBC /* zjpNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 529330322419068400976FBC /* zjpNetWork.m */; };
 		5293303B2419102B00976FBC /* tabViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 529330392419102B00976FBC /* tabViewViewController.m */; };
 		5293303C2419102B00976FBC /* tabViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5293303A2419102B00976FBC /* tabViewViewController.xib */; };
+		5293304024191EDD00976FBC /* KingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5293303E24191EDD00976FBC /* KingViewController.m */; };
+		5293304124191EDD00976FBC /* KingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5293303F24191EDD00976FBC /* KingViewController.xib */; };
 		EC9C39A52B116FD2F48ED943 /* Pods_ApiTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5380505608A7B245035C3C9 /* Pods_ApiTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +54,9 @@
 		529330382419102B00976FBC /* tabViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tabViewViewController.h; sourceTree = "<group>"; };
 		529330392419102B00976FBC /* tabViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tabViewViewController.m; sourceTree = "<group>"; };
 		5293303A2419102B00976FBC /* tabViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = tabViewViewController.xib; sourceTree = "<group>"; };
+		5293303D24191EDD00976FBC /* KingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KingViewController.h; sourceTree = "<group>"; };
+		5293303E24191EDD00976FBC /* KingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KingViewController.m; sourceTree = "<group>"; };
+		5293303F24191EDD00976FBC /* KingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KingViewController.xib; sourceTree = "<group>"; };
 		875710B19DED5390891CFD4E /* Pods-ApiTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiTest.debug.xcconfig"; path = "Target Support Files/Pods-ApiTest/Pods-ApiTest.debug.xcconfig"; sourceTree = "<group>"; };
 		B5380505608A7B245035C3C9 /* Pods_ApiTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApiTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -102,6 +107,9 @@
 				5293303A2419102B00976FBC /* tabViewViewController.xib */,
 				52932F9D2418FDE600976FBC /* ViewController.h */,
 				52932F9E2418FDE600976FBC /* ViewController.m */,
+				5293303D24191EDD00976FBC /* KingViewController.h */,
+				5293303E24191EDD00976FBC /* KingViewController.m */,
+				5293303F24191EDD00976FBC /* KingViewController.xib */,
 				52932FA02418FDE600976FBC /* Main.storyboard */,
 				52932FA32418FDE900976FBC /* Assets.xcassets */,
 				52932FA52418FDE900976FBC /* LaunchScreen.storyboard */,
@@ -203,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52932FA72418FDE900976FBC /* LaunchScreen.storyboard in Resources */,
+				5293304124191EDD00976FBC /* KingViewController.xib in Resources */,
 				52932FA42418FDE900976FBC /* Assets.xcassets in Resources */,
 				52932FA22418FDE600976FBC /* Main.storyboard in Resources */,
 				52933030241901B100976FBC /* SportsViewController.xib in Resources */,
@@ -260,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52932F9F2418FDE600976FBC /* ViewController.m in Sources */,
+				5293304024191EDD00976FBC /* KingViewController.m in Sources */,
 				5293302A2419019200976FBC /* JHRequest.m in Sources */,
 				52932F992418FDE600976FBC /* AppDelegate.m in Sources */,
 				5293302F241901B100976FBC /* SportsViewController.m in Sources */,

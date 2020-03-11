@@ -36,7 +36,6 @@
           });
 }
 -(void)parsingApi
-//-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
  
     NSMutableDictionary *parameter =[[NSMutableDictionary alloc]init];
