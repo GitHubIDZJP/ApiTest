@@ -17,6 +17,7 @@ PODS:
   - Masonry (1.1.0)
   - MBProgressHUD (1.2.0)
   - MJRefresh (3.3.1)
+  - MSWeakTimer (1.1.0)
   - SDWebImage (5.5.2):
     - SDWebImage/Core (= 5.5.2)
   - SDWebImage/Core (5.5.2)
@@ -26,6 +27,7 @@ DEPENDENCIES:
   - Masonry
   - MBProgressHUD
   - MJRefresh
+  - MSWeakTimer
   - SDWebImage
 
 SPEC REPOS:
@@ -34,6 +36,7 @@ SPEC REPOS:
     - Masonry
     - MBProgressHUD
     - MJRefresh
+    - MSWeakTimer
     - SDWebImage
 
 SPEC CHECKSUMS:
@@ -41,8 +44,9 @@ SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
+  MSWeakTimer: 9426150f933b80ed3acf3f6d228e4b61f0e303c8
   SDWebImage: 4d5c027c935438f341ed33dbac53ff9f479922ca
 
-PODFILE CHECKSUM: abf114a3e77fde5a6c08dc07b2c5d4ba11b08123
+PODFILE CHECKSUM: e2a94eceac69ee503f2cc63967f28ee53896c61d
 
 COCOAPODS: 1.8.4
