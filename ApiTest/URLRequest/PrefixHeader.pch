@@ -1,0 +1,250 @@
+
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "Header.h"
+#ifndef __OPTIMIZE__
+
+#define NSLog(...) printf("%f %s\n",[[NSDate date]timeIntervalSince1970],[[NSString stringWithFormat:__VA_ARGS__]UTF8String]);
+
+#endif
+#define UICOLOR_RANDOM  [UIColor colorWithRed:(arc4random()%255)/255.0 green:(arc4random()%255)/255.0 blue:(arc4random()%255)/255.0 alpha:1.0]
+//宏定义获取屏幕宽
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+//宏定义获取屏幕高
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+//宏定义获取屏幕宽
+#define kScreenWidth [UIScreen mainScreen].bounds.size.width
+//宏定义获取屏幕高
+#define kScreenHeight [UIScreen mainScreen].bounds.size.height
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+//宏定义像素宽 px
+#define KWIDTH [UIScreen mainScreen].bounds.size.width/750.0
+//宏定义等比例适配
+#define KSCALE SCREEN_WIDTH / 375.0
+
+//获得RGB颜色
+#define QCColor(r, g, b)         [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+//px是像素单位，em是相对单位，pt是绝对单位
+//#define KWIDTH [UIScreen mainScreen].bounds.size.width/350.0
+//判断当前手机型号是否iPhone5 iPhone5：w:640 h:1136
+#define IS_IPHONE_5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+//默认沙盒路径
+#define userInfoFile1(filePath) [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES)objectAtIndex:0]stringByAppendingPathComponent:filePath]
+
+// 宏定义iPhoneX 宽 375 高812
+#define IS_iPhoneX ([UIScreen mainScreen].bounds.size.width == 375 && [UIScreen mainScreen].bounds.size.height == 812) ||  ([UIScreen mainScreen].bounds.size.width == 414 && [UIScreen mainScreen].bounds.size.height == 896)
+
+
+
+//定义注册页面m每行高的值 90
+#define registerH  90*KWIDTH
+#define tooBarH 70*KWIDTH
+
+//16进制
+#define  mainColor [UIColor colorWithHexString:@"#fdda22"]
+
+#define iOS_11 ([[UIDevice currentDevice].systemVersion doubleValue] >= 11.0)
+#define iOS_10 ([[UIDevice currentDevice].systemVersion doubleValue] < 11.0)
+// 2.RGB颜色
+#define color(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define VCBGCOLOR color(243, 243, 243)
+#define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+//设置随机颜色(调试时候很有用)
+#define RandomColor [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0]
+
+//导航栏高度
+#define JH_NavBarHeight (IS_iPhoneX ? 88.f : 64.f)
+
+//状态栏高度
+#define JH_StatusBarHeight (IS_iPhoneX ? 44.f : 20.f)
+
+// 24= 44- 20
+#define zjpTest (IS_iPhoneX ? (44.f - 20.f) : 0.f)
+
+#define ifIphoneX (IS_iPhoneX ? (- 20.f) : true)
+
+//#define isX (IS_iPhoneX ? (-44) : -20.f)
+
+
+
+
+//导航栏内容高度
+#define JH_NavBarContentHeight 44.0
+
+//iPhone X->tabBar高度
+#define JH_TabBarHeight (IS_iPhoneX ? 49.f + 34.f : 49.f)
+
+
+
+//判断iOS是否11系统
+#define IOS11 if (@available(iOS 11.0, *)) {\
+self.tableView.estimatedRowHeight = 0;\
+self.tableView.estimatedSectionHeaderHeight = 0;\
+self.tableView.estimatedSectionFooterHeight = 0;\
+}
+
+
+#define SET_STATUSCOLOR if (@available(iOS 13.0, *)){ \
+           UIView *statusBar = [[UIView alloc]initWithFrame:[UIApplication 　　　　sharedApplication].keyWindow.windowScene.statusBarManager.statusBarFrame] ; \
+statusBar.backgroundColor = UIColorFromHex(@"#07913B");\
+[[UIApplication sharedApplication].keyWindow addSubview:statusBar]; \
+}else{ \
+   UIView *statusBar = [[[UIApplication sharedApplication] valueForKey:@"statusBarWindow"] valueForKey:@"statusBar"];\
+               if ([statusBar respondsToSelector:@selector(setBackgroundColor:)]) { \
+statusBar.backgroundColor = UIColorFromHex(@"#07913B"); \
+               } \
+}
+
+//宏定义frame的rect x y w h
+#define RECT(x,y,w,h) CGRectMake(x, y, w, h)
+
+//字符串宽度
+#define  Width(str,size,h)   [str sizeWithFont:[UIFont systemFontOfSize:size] constrainedToSize:CGSizeMake(MAXFLOAT, h)].width
+
+
+//图片前缀
+#define Img_URL @"http://apijava.gdswlw.com"
+
+#define Img_URL_HEAD @"https://app.momokaola.com"
+//图片拼接
+#define HEADIMGURL(_URL_) [NSString stringWithFormat:@"%@/%@",Img_URL_HEAD,_URL_]
+
+#define IMGURL(_URL_) [NSString stringWithFormat:@"%@/%@",Img_URL_HEAD,_URL_]
+
+
+#define URLREN @"https://app.momokaola.com/momokola_app"
+
+
+#define API_POST(_URL_) [NSString stringWithFormat:@"%@/%@",URLREN,_URL_]
+
+#define API_THRESS @"https://h5.momokaola.com/kissKoala/kissKoala"
+
+#define API_POST_URL(_URL_) [NSString stringWithFormat:@"%@/%@",API_THRESS,_URL_]
+
+#define API_POST_Img [NSString stringWithFormat:@"https://admin.momokaola.com:8443/fileupload/upload"]
+#define APP_Img_KEY @"8eb93d5b-d852-4"
+
+#define POINT 10
+//状态栏高度
+#define statusHeight [[UIApplication sharedApplication] statusBarFrame].size.height
+//导航条高
+#define navHeight  self.navigationController.navigationBar.frame.size.height + statusHeight
+//tabbar高度：条件运算符 是X就系统的默认高度 不是就64
+#define tabbarHeight  (IS_iPhoneX ?  self.tabBarController.tabBar.frame.size.height : 64)
+
+//iphoneX 脚  x的底部:83 非X:49
+#define xbottomHeight (IS_iPhoneX ? 34   : 0)
+
+
+//定义黑色
+#define BLCOLOR [UIColor blackColor]
+//定义白色 从给黑到白  0是黑色，1是白色  设置:背景半透明而其子控件不透明 文字颜色
+#define White2  [UIColor colorWithWhite:0.2 alpha:1]
+#define White3  [UIColor colorWithWhite:0.3 alpha:1]
+#define White4  [UIColor colorWithWhite:0.4 alpha:1]
+#define White5  [UIColor colorWithWhite:0.5 alpha:1]
+#define White6  [UIColor colorWithWhite:0.6 alpha:1]
+#define White7  [UIColor colorWithWhite:0.7 alpha:1]
+#define White8  [UIColor colorWithWhite:0.8 alpha:1]
+#define White9  [UIColor colorWithWhite:0.9 alpha:1]
+
+//宏定义深色
+#define  DeepColor [UIColor colorWithHexString:@"#1f1f1f"]
+
+//宏定义浅色
+#define  ShallowColor [UIColor colorWithHexString:@"#949494"]
+//宏定义浅色
+#define White  [UIColor whiteColor]
+//设置线条色
+#define LineColor [UIColor colorWithHexString:@"#d8d8d8"]
+
+//设置颜色
+#define Color1 [UIColor colorWithHexString:@"#222222"]
+#define Color2 [UIColor colorWithHexString:@"#f29200"]
+#define Color3 [UIColor colorWithHexString:@"#fdda22"]
+#define Color4 [UIColor colorWithHexString:@"#f30e0e"]
+#define Color5 [UIColor colorWithHexString:@"#f4f4f4"]
+#define Color6 [UIColor colorWithHexString:@"#f5f6f7"]
+#define Color7 [UIColor colorWithHexString:@"#bfbfbf"]
+//
+#define Font8  [UIFont systemFontOfSize:8]
+#define Font9  [UIFont systemFontOfSize:9]
+#define Font10  [UIFont systemFontOfSize:10]
+#define Font11  [UIFont systemFontOfSize:11]
+#define Font12  [UIFont systemFontOfSize:12]
+#define Font13  [UIFont systemFontOfSize:13]
+#define Font14  [UIFont systemFontOfSize:14]
+#define Font15  [UIFont systemFontOfSize:15]
+#define Font16  [UIFont systemFontOfSize:16]
+#define Font17  [UIFont systemFontOfSize:17]
+#define Font18  [UIFont systemFontOfSize:18]
+#define Font19  [UIFont systemFontOfSize:19]
+#define Font20  [UIFont systemFontOfSize:20]
+#define Font21  [UIFont systemFontOfSize:21]
+#define Font22  [UIFont systemFontOfSize:22]
+#define Font23  [UIFont systemFontOfSize:23]
+#define Font24  [UIFont systemFontOfSize:24]
+#define Font25  [UIFont systemFontOfSize:25]
+#define Font26  [UIFont systemFontOfSize:26]
+#define Font30  [UIFont systemFontOfSize:30]
+
+
+//log打印
+#define LogNsstring(str)   [NSString stringWithFormat:@"%@",str]
+
+//宏定义文字颜色
+#define TextColor(label,str,Color,lenght1,lenght2)   NSMutableAttributedString *str =                           [[NSMutableAttributedString alloc] initWithString:label.text];\
+[str addAttribute:NSForegroundColorAttributeName value:Color range:NSMakeRange(lenght1,lenght2)];\
+label.attributedText = str;
+
+//设置文字的str size lenght
+#define TextSize(label,str,size,lenght1,lenght2) NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString:label.text];\
+[str addAttribute:NSFontAttributeName value:size range:NSMakeRange(lenght1, lenght2)];\
+label.attributedText = str;
+
+//设置文字
+#define TextSizeColor(label,str,size,Color,lenght1,lenght2)   NSMutableAttributedString *str =                           [[NSMutableAttributedString alloc] initWithString:label.text];\
+[str addAttribute:NSForegroundColorAttributeName value:Color range:NSMakeRange(lenght1,lenght2)];\
+[str addAttribute:NSFontAttributeName value:size range:NSMakeRange(lenght1, lenght2)];\
+label.attributedText = str;
+
+#define TextSize2(label,str,size,lenght1,lenght2,size1,lenght4,lenght5) NSMutableAttributedString *str = [[NSMutableAttributedString alloc] initWithString:label.text];\
+[str addAttribute:NSFontAttributeName value:size range:NSMakeRange(lenght1, lenght2)];\
+[str addAttribute:NSFontAttributeName value:size1 range:NSMakeRange(lenght4, lenght5)];\
+label.attributedText = str;
+
+//文本size
+#define BouingSize(str,with,size) [str boundingRectWithSize:CGSizeMake(with, 0) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:size]} context:nil]
+
+//设置图片defaultName
+#define defaultImg [UIImage imageNamed:@"tx"]
+//设置未加载图片
+#define NotloadingImage [UIImage imageNamed:@"jiazai"]
+
+
+#define  ZFM_LEFT 30
+#define  BTN_AND_TOOBAR_M_LEFT 40*KWIDTH
+
+#define marginLeft 20*KWIDTH
+#define centerTabBarItemCellHeight   300*KWIDTH
+
+///////////
+
+#define MARGINLEFT 40*KWIDTH
+#define tableSeparatorColor [UIColor colorWithRed:(250)/255.0 green:(250)/255.0 blue:(250)/255.0 alpha:1.0]
+
+
+#define  MyCircleCarpFirstCellPackageH 450*KWIDTH
+
+//关于锦鲤不烦
+//#define
+#define YBAlertShow(messageText,buttonName,newHint,newHint1) \
+UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:(messageText) \
+delegate:nil cancelButtonTitle:(buttonName) otherButtonTitles:(newHint),(newHint1),nil];\
+[alert show];
+
+
+#endif
