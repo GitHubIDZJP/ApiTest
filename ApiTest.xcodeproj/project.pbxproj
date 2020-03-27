@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5241061B242DFB61004722A8 /* getNewToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 52410619242DFB61004722A8 /* getNewToken.m */; };
+		5241061C242DFB61004722A8 /* getNewToken.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5241061A242DFB61004722A8 /* getNewToken.xib */; };
+		5241061F242DFBC1004722A8 /* STHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5241061D242DFBC1004722A8 /* STHTTPRequest.m */; };
+		52410626242DFE78004722A8 /* JHDateTimeChooseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52410624242DFE78004722A8 /* JHDateTimeChooseView.m */; };
+		525F67BC24235439004E873E /* refreshTokenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F67BA24235439004E873E /* refreshTokenViewController.m */; };
+		525F67BD24235439004E873E /* refreshTokenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 525F67BB24235439004E873E /* refreshTokenViewController.xib */; };
+		525F67C524238E57004E873E /* AlbumGetPhotos.m in Sources */ = {isa = PBXBuildFile; fileRef = 525F67C324238E57004E873E /* AlbumGetPhotos.m */; };
+		525F67C624238E57004E873E /* AlbumGetPhotos.xib in Resources */ = {isa = PBXBuildFile; fileRef = 525F67C424238E57004E873E /* AlbumGetPhotos.xib */; };
 		52932F992418FDE600976FBC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52932F982418FDE600976FBC /* AppDelegate.m */; };
 		52932F9C2418FDE600976FBC /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 52932F9B2418FDE600976FBC /* SceneDelegate.m */; };
 		52932F9F2418FDE600976FBC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52932F9E2418FDE600976FBC /* ViewController.m */; };
@@ -23,11 +31,34 @@
 		5293303C2419102B00976FBC /* tabViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5293303A2419102B00976FBC /* tabViewViewController.xib */; };
 		5293304024191EDD00976FBC /* KingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5293303E24191EDD00976FBC /* KingViewController.m */; };
 		5293304124191EDD00976FBC /* KingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5293303F24191EDD00976FBC /* KingViewController.xib */; };
+		52F327A02423082500AAAF52 /* TestName@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 52F3279F2423082500AAAF52 /* TestName@2x.png */; };
+		52F45217242997B500C9488E /* sdWebImageLoadImg.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F45215242997B500C9488E /* sdWebImageLoadImg.m */; };
+		52F45218242997B500C9488E /* sdWebImageLoadImg.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52F45216242997B500C9488E /* sdWebImageLoadImg.xib */; };
+		52F452512429AA6500C9488E /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F452472429AA6500C9488E /* SVRadialGradientLayer.m */; };
+		52F452522429AA6500C9488E /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F4524A2429AA6500C9488E /* SVProgressAnimatedView.m */; };
+		52F452532429AA6500C9488E /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F4524D2429AA6500C9488E /* SVProgressHUD.m */; };
+		52F452542429AA6500C9488E /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F4524E2429AA6500C9488E /* SVIndefiniteAnimatedView.m */; };
+		52F452552429AA6500C9488E /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 52F4524F2429AA6500C9488E /* SVProgressHUD.bundle */; };
+		52F452592429AAA300C9488E /* SVProhressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 52F452572429AAA300C9488E /* SVProhressHUD.m */; };
+		52F4525A2429AAA300C9488E /* SVProhressHUD.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52F452582429AAA300C9488E /* SVProhressHUD.xib */; };
 		EC9C39A52B116FD2F48ED943 /* Pods_ApiTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5380505608A7B245035C3C9 /* Pods_ApiTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3CCA55E3466119B620F601DA /* Pods-ApiTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiTest.release.xcconfig"; path = "Target Support Files/Pods-ApiTest/Pods-ApiTest.release.xcconfig"; sourceTree = "<group>"; };
+		52410618242DFB61004722A8 /* getNewToken.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = getNewToken.h; sourceTree = "<group>"; };
+		52410619242DFB61004722A8 /* getNewToken.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = getNewToken.m; sourceTree = "<group>"; };
+		5241061A242DFB61004722A8 /* getNewToken.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = getNewToken.xib; sourceTree = "<group>"; };
+		5241061D242DFBC1004722A8 /* STHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STHTTPRequest.m; sourceTree = "<group>"; };
+		5241061E242DFBC1004722A8 /* STHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STHTTPRequest.h; sourceTree = "<group>"; };
+		52410624242DFE78004722A8 /* JHDateTimeChooseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHDateTimeChooseView.m; sourceTree = "<group>"; };
+		52410625242DFE78004722A8 /* JHDateTimeChooseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHDateTimeChooseView.h; sourceTree = "<group>"; };
+		525F67B924235439004E873E /* refreshTokenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = refreshTokenViewController.h; sourceTree = "<group>"; };
+		525F67BA24235439004E873E /* refreshTokenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = refreshTokenViewController.m; sourceTree = "<group>"; };
+		525F67BB24235439004E873E /* refreshTokenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = refreshTokenViewController.xib; sourceTree = "<group>"; };
+		525F67C224238E57004E873E /* AlbumGetPhotos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlbumGetPhotos.h; sourceTree = "<group>"; };
+		525F67C324238E57004E873E /* AlbumGetPhotos.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlbumGetPhotos.m; sourceTree = "<group>"; };
+		525F67C424238E57004E873E /* AlbumGetPhotos.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlbumGetPhotos.xib; sourceTree = "<group>"; };
 		52932F942418FDE600976FBC /* ApiTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApiTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52932F972418FDE600976FBC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		52932F982418FDE600976FBC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -57,6 +88,23 @@
 		5293303D24191EDD00976FBC /* KingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KingViewController.h; sourceTree = "<group>"; };
 		5293303E24191EDD00976FBC /* KingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KingViewController.m; sourceTree = "<group>"; };
 		5293303F24191EDD00976FBC /* KingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KingViewController.xib; sourceTree = "<group>"; };
+		52F3279F2423082500AAAF52 /* TestName@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "TestName@2x.png"; sourceTree = "<group>"; };
+		52F45214242997B500C9488E /* sdWebImageLoadImg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sdWebImageLoadImg.h; sourceTree = "<group>"; };
+		52F45215242997B500C9488E /* sdWebImageLoadImg.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sdWebImageLoadImg.m; sourceTree = "<group>"; };
+		52F45216242997B500C9488E /* sdWebImageLoadImg.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = sdWebImageLoadImg.xib; sourceTree = "<group>"; };
+		52F452472429AA6500C9488E /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		52F452482429AA6500C9488E /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		52F452492429AA6500C9488E /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		52F4524A2429AA6500C9488E /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		52F4524B2429AA6500C9488E /* SVProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SVProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		52F4524C2429AA6500C9488E /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		52F4524D2429AA6500C9488E /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		52F4524E2429AA6500C9488E /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		52F4524F2429AA6500C9488E /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		52F452502429AA6500C9488E /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		52F452562429AAA300C9488E /* SVProhressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SVProhressHUD.h; sourceTree = "<group>"; };
+		52F452572429AAA300C9488E /* SVProhressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SVProhressHUD.m; sourceTree = "<group>"; };
+		52F452582429AAA300C9488E /* SVProhressHUD.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SVProhressHUD.xib; sourceTree = "<group>"; };
 		875710B19DED5390891CFD4E /* Pods-ApiTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApiTest.debug.xcconfig"; path = "Target Support Files/Pods-ApiTest/Pods-ApiTest.debug.xcconfig"; sourceTree = "<group>"; };
 		B5380505608A7B245035C3C9 /* Pods_ApiTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ApiTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -73,6 +121,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52410623242DFE60004722A8 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				52410625242DFE78004722A8 /* JHDateTimeChooseView.h */,
+				52410624242DFE78004722A8 /* JHDateTimeChooseView.m */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
 		52932F8B2418FDE600976FBC = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +151,7 @@
 		52932F962418FDE600976FBC /* ApiTest */ = {
 			isa = PBXGroup;
 			children = (
+				52F452452429AA4F00C9488E /* 第三方 */,
 				529330232419019200976FBC /* URLRequest */,
 				52932F972418FDE600976FBC /* AppDelegate.h */,
 				52932F982418FDE600976FBC /* AppDelegate.m */,
@@ -105,11 +163,26 @@
 				529330382419102B00976FBC /* tabViewViewController.h */,
 				529330392419102B00976FBC /* tabViewViewController.m */,
 				5293303A2419102B00976FBC /* tabViewViewController.xib */,
+				525F67B924235439004E873E /* refreshTokenViewController.h */,
+				525F67BA24235439004E873E /* refreshTokenViewController.m */,
+				525F67BB24235439004E873E /* refreshTokenViewController.xib */,
+				525F67C224238E57004E873E /* AlbumGetPhotos.h */,
+				525F67C324238E57004E873E /* AlbumGetPhotos.m */,
+				525F67C424238E57004E873E /* AlbumGetPhotos.xib */,
+				52F45214242997B500C9488E /* sdWebImageLoadImg.h */,
+				52F45215242997B500C9488E /* sdWebImageLoadImg.m */,
+				52F45216242997B500C9488E /* sdWebImageLoadImg.xib */,
+				52F452562429AAA300C9488E /* SVProhressHUD.h */,
+				52F452572429AAA300C9488E /* SVProhressHUD.m */,
+				52F452582429AAA300C9488E /* SVProhressHUD.xib */,
 				52932F9D2418FDE600976FBC /* ViewController.h */,
 				52932F9E2418FDE600976FBC /* ViewController.m */,
 				5293303D24191EDD00976FBC /* KingViewController.h */,
 				5293303E24191EDD00976FBC /* KingViewController.m */,
 				5293303F24191EDD00976FBC /* KingViewController.xib */,
+				52410618242DFB61004722A8 /* getNewToken.h */,
+				52410619242DFB61004722A8 /* getNewToken.m */,
+				5241061A242DFB61004722A8 /* getNewToken.xib */,
 				52932FA02418FDE600976FBC /* Main.storyboard */,
 				52932FA32418FDE900976FBC /* Assets.xcassets */,
 				52932FA52418FDE900976FBC /* LaunchScreen.storyboard */,
@@ -122,16 +195,45 @@
 		529330232419019200976FBC /* URLRequest */ = {
 			isa = PBXGroup;
 			children = (
+				5241061E242DFBC1004722A8 /* STHTTPRequest.h */,
+				5241061D242DFBC1004722A8 /* STHTTPRequest.m */,
+				52F3279F2423082500AAAF52 /* TestName@2x.png */,
 				529330242419019200976FBC /* Header.h */,
-				529330252419019200976FBC /* JHGlobalMethod.h */,
 				529330262419019200976FBC /* JHRequest.h */,
 				529330272419019200976FBC /* JHRequest.m */,
+				529330252419019200976FBC /* JHGlobalMethod.h */,
 				529330282419019200976FBC /* JHGlobalMethod.m */,
 				529330292419019200976FBC /* PrefixHeader.pch */,
 				529330312419068400976FBC /* zjpNetWork.h */,
 				529330322419068400976FBC /* zjpNetWork.m */,
+				52410623242DFE60004722A8 /* Add */,
 			);
 			path = URLRequest;
+			sourceTree = "<group>";
+		};
+		52F452452429AA4F00C9488E /* 第三方 */ = {
+			isa = PBXGroup;
+			children = (
+				52F452462429AA6500C9488E /* SVProgressHUD */,
+			);
+			path = "第三方";
+			sourceTree = "<group>";
+		};
+		52F452462429AA6500C9488E /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				52F452482429AA6500C9488E /* SVIndefiniteAnimatedView.h */,
+				52F4524E2429AA6500C9488E /* SVIndefiniteAnimatedView.m */,
+				52F452502429AA6500C9488E /* SVProgressAnimatedView.h */,
+				52F4524A2429AA6500C9488E /* SVProgressAnimatedView.m */,
+				52F4524B2429AA6500C9488E /* SVProgressHUD-Prefix.pch */,
+				52F4524F2429AA6500C9488E /* SVProgressHUD.bundle */,
+				52F452492429AA6500C9488E /* SVProgressHUD.h */,
+				52F4524D2429AA6500C9488E /* SVProgressHUD.m */,
+				52F4524C2429AA6500C9488E /* SVRadialGradientLayer.h */,
+				52F452472429AA6500C9488E /* SVRadialGradientLayer.m */,
+			);
+			path = SVProgressHUD;
 			sourceTree = "<group>";
 		};
 		AFFB0E857EAB0137DE1D5699 /* Frameworks */ = {
@@ -211,11 +313,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				52932FA72418FDE900976FBC /* LaunchScreen.storyboard in Resources */,
+				5241061C242DFB61004722A8 /* getNewToken.xib in Resources */,
 				5293304124191EDD00976FBC /* KingViewController.xib in Resources */,
+				52F4525A2429AAA300C9488E /* SVProhressHUD.xib in Resources */,
 				52932FA42418FDE900976FBC /* Assets.xcassets in Resources */,
 				52932FA22418FDE600976FBC /* Main.storyboard in Resources */,
+				525F67C624238E57004E873E /* AlbumGetPhotos.xib in Resources */,
 				52933030241901B100976FBC /* SportsViewController.xib in Resources */,
+				52F327A02423082500AAAF52 /* TestName@2x.png in Resources */,
+				525F67BD24235439004E873E /* refreshTokenViewController.xib in Resources */,
 				5293303C2419102B00976FBC /* tabViewViewController.xib in Resources */,
+				52F45218242997B500C9488E /* sdWebImageLoadImg.xib in Resources */,
+				52F452552429AA6500C9488E /* SVProgressHUD.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,15 +377,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				525F67BC24235439004E873E /* refreshTokenViewController.m in Sources */,
 				52932F9F2418FDE600976FBC /* ViewController.m in Sources */,
 				5293304024191EDD00976FBC /* KingViewController.m in Sources */,
 				5293302A2419019200976FBC /* JHRequest.m in Sources */,
 				52932F992418FDE600976FBC /* AppDelegate.m in Sources */,
 				5293302F241901B100976FBC /* SportsViewController.m in Sources */,
+				52F452542429AA6500C9488E /* SVIndefiniteAnimatedView.m in Sources */,
 				52932FAA2418FDE900976FBC /* main.m in Sources */,
+				52F452512429AA6500C9488E /* SVRadialGradientLayer.m in Sources */,
+				5241061B242DFB61004722A8 /* getNewToken.m in Sources */,
+				52410626242DFE78004722A8 /* JHDateTimeChooseView.m in Sources */,
 				529330332419068400976FBC /* zjpNetWork.m in Sources */,
+				52F452532429AA6500C9488E /* SVProgressHUD.m in Sources */,
 				5293303B2419102B00976FBC /* tabViewViewController.m in Sources */,
+				525F67C524238E57004E873E /* AlbumGetPhotos.m in Sources */,
+				52F452522429AA6500C9488E /* SVProgressAnimatedView.m in Sources */,
+				52F452592429AAA300C9488E /* SVProhressHUD.m in Sources */,
 				52932F9C2418FDE600976FBC /* SceneDelegate.m in Sources */,
+				52F45217242997B500C9488E /* sdWebImageLoadImg.m in Sources */,
+				5241061F242DFBC1004722A8 /* STHTTPRequest.m in Sources */,
 				5293302B2419019200976FBC /* JHGlobalMethod.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -421,7 +541,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J2T36JSZMZ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/test/Documents/ApiTest/ApiTest/URLRequest/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ApiTest/URLRequest/PrefixHeader.pch";
 				INFOPLIST_FILE = ApiTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -441,7 +561,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J2T36JSZMZ;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/test/Documents/ApiTest/ApiTest/URLRequest/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ApiTest/URLRequest/PrefixHeader.pch";
 				INFOPLIST_FILE = ApiTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

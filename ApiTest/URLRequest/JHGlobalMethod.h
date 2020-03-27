@@ -14,7 +14,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-
+#define defaultRemindTime @"2018-12-31 12:00"
 @interface JHGlobalMethod : NSObject
 
 + (JHGlobalMethod *)shareMethod;
@@ -51,6 +51,7 @@ UIImageView *getImgView(CGRect rect,UIViewContentMode mode);
 
 #pragma mark  自定义颜色转换
 id colorWithHexString  (NSString *color);
+
 #pragma mark  数组转json字符串
 NSString *arrayToJSONString(NSArray *array);
 
@@ -62,6 +63,7 @@ NSDictionary *dictionaryWithJsonString(NSString *jsonString) ;
 
 #pragma mark  获取图片
 UIImage *getImage(NSString *string);
+NSString *UIImageToBase64Str(UIImage *image);//图片转字符串
 #pragma mark  设置圆角
 void getLayerCornerRadius(UIView *vi,CGFloat radius,BOOL clips);
 
@@ -83,14 +85,12 @@ bool checkTel(NSString * str);
 
 #pragma mark 利用正则表达式验证邮箱
 bool isValidateEmail(NSString *email);
-
-
-
-
 #pragma mark 保存本地数据
 void saveUserInfo(NSString *keyName,id valueName);
+void saveLocalInfo(NSString *localKey,id localName);
 #pragma mark 获取本地数据
 NSString *  getUserInfo(NSString *keyName);
+NSString *  getLocalInfo(NSString *localName);
 #pragma mark 删除本地数据
 void removeUserInfo(NSString *key);
 #pragma mark 是否空值
@@ -131,7 +131,32 @@ NSString *getAppStore(NSString *ID);
 #pragma mark 拨打电话
 void dialPhone(NSString *phone);
 
+UIImage *imgToStr(UIImage *img);
 
-
-
+//新加的
+CGSize getTextSize(NSString *text, UIFont *font, CGFloat width);
+//保存网络请求数据
+void saveDownloadInfo (NSString* fileName, id sourceData);
+//获取保存网络请求数据
+id getDownloadData (NSString *fileName);
+//删除保存网络请求数据
+void deleteDownloadData (NSString *fileName);
+void showAlertHint (NSString * hint);
+#pragma mark 设置本地通知
+void setLocalNoti(NSString *timeStr, NSString *notiName,NSString *bodyName,NSString *daId_bwId_srId);
+#pragma mark 删除通知
+void deleteLocalNotification(NSString *key);
+void setParamsDictionary(NSMutableDictionary *params,NSString *text,NSString *key);
+//获取对应语言的国际化
+//NSString *getLanguageInternal(NSString *language);
+#pragma mark getRandomCode  ++++++++++++获取随机码
+NSString* getRandomCode(void);
+//获取当前屏幕显示的viewcontroller
+- (UIViewController *)getCurrentVC;
+//将json转为字典
++ (NSDictionary *)dictionaryWithJsonString:(NSString *)jsonString ;
+//手机号验证码
+BOOL validateMobile(NSString *phoneStr);
+//竖着拍照上传
+UIImage *fixOrientation(UIImage *aImage);
 @end

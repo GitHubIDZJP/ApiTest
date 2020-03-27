@@ -24,11 +24,7 @@
 #import "UIImageView+WebCache.h"
 #import "Masonry.h"
 #import "zjpNetWork.h"
-
-
-
-
-
+#import "UIImageView+WebCache.h"
 #endif /* Header_h */
 
 

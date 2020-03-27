@@ -9,6 +9,7 @@ pod ‘AFNetworking’
 pod 'MJRefresh'
 pod ‘SDWebImage’
 pod 'MBProgressHUD'
+
 pod 'MSWeakTimer'
   # Pods for ApiTest
 

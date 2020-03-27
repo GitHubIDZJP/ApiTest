@@ -102,8 +102,35 @@ void requestPost(NSString *requestUrl,NSDictionary *parameter,requestError error
     //    [oper start];
 }
 
-
-
+//body请求
+void requestPostBody(NSString *requestUrl,NSDictionary *parameter, requestBody bodyBlock,requestError errorBlock,requestSuccessful successfulBlock)
+{
+    JHRequest *r = [JHRequest new];
+    
+    if (r->block_requestError != errorBlock)
+    {
+        r->block_requestError = errorBlock;
+    }
+    if (r->block_requestSuccessful != successfulBlock)
+    {
+        r->block_requestSuccessful = successfulBlock;
+    }
+    
+    r->block_requestBody = bodyBlock;
+    
+    AFHTTPSessionManager *session = [AFHTTPSessionManager manager];
+   
+    [session POST:@"" parameters:parameter constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+        r->block_requestBody(formData);
+    } success:^(NSURLSessionDataTask *task, id responseObject) {
+        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingAllowFragments error:nil];
+        r->block_requestSuccessful(dict);
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        r->block_requestError(error);
+    }];
+//    oper.responseSerializer = [AFCompoundResponseSerializer serializer];
+//    [oper start];
+}
 
 //NO4
 void requestPostImage(NSString *requestUrl,NSDictionary *parameter,NSArray *photoArr,requestError errorBlock,requestSuccessful successfulBlock){
@@ -130,13 +157,11 @@ void requestPostImage(NSString *requestUrl,NSDictionary *parameter,NSArray *phot
             [formData appendPartWithFileURL:[NSURL fileURLWithPath:userInfoFile1(file_str)] name:keyArr[i] error:nil];
         }
     } progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        //        NSDictionary *tempDic = [NSJSONSerialization JSONObjectWithData:responseObject options:NSJSONReadingAllowFragments error:nil];
-        // block_requestSuccessful(tempDic);
-        //        successfulBlock(responseObject);
+        
         request->block_requestSuccessful(responseObject);
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        //         block_requestError(error);
+    
         request->block_requestError(error);
     }];
     
@@ -147,6 +172,8 @@ void requestPostImage(NSString *requestUrl,NSDictionary *parameter,NSArray *phot
 
 #pragma mark 保存图片
 void saveImage(UIImage *image,NSString *file){
+    //file:文件名
+    //image: 图片对象
     NSData *sizeData = UIImageJPEGRepresentation(image,1);
 
     NSData *data = UIImageJPEGRepresentation(image, 0.00000000001);
@@ -160,6 +187,24 @@ void saveImage(UIImage *image,NSString *file){
     //    NSLog(@"%@",userInfoFile(file));
     
     [data writeToFile:userInfoFile1(file) atomically:YES];
+    
+}
+-(void)saveImage:(UIImage*)image File:(NSString*)file
+{
+    
+    NSData *sizeData = UIImageJPEGRepresentation(image, 1.0);
+    
+    NSData *data = UIImageJPEGRepresentation(image, 1.0);
+    
+    if (sizeData.length > 80000)
+    {
+        
+        data = UIImageJPEGRepresentation(image, 0.0001);
+    }
+    // NSData *data = UIImagePNGRepresentation(image);
+    BOOL isSuccess =  [data writeToFile:@"" atomically:YES];
+    NSLog(@"---%d----",isSuccess);
+    
     
 }
 

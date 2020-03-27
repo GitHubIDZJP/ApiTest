@@ -220,7 +220,7 @@ label.attributedText = str;
 #define BouingSize(str,with,size) [str boundingRectWithSize:CGSizeMake(with, 0) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:size]} context:nil]
 
 //设置图片defaultName
-#define defaultImg [UIImage imageNamed:@"tx"]
+#define defaultImg [UIImage imageNamed:@"TestName@2x"]
 //设置未加载图片
 #define NotloadingImage [UIImage imageNamed:@"jiazai"]
 

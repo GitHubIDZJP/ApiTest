@@ -1,6 +1,11 @@
 #import "SceneDelegate.h"
 #import "SportsViewController.h"
 #import "tabViewViewController.h"
+#import "refreshTokenViewController.h"
+#import "AlbumGetPhotos.h"
+#import "sdWebImageLoadImg.h"
+#import "SVProhressHUD.h"
+#import "getNewToken.h"
 @interface SceneDelegate ()
 
 @end
@@ -12,7 +17,7 @@
     
      UIWindowScene *winRoot = (UIWindowScene*)scene;
                    self.window = [[UIWindow alloc]initWithWindowScene:winRoot];
-                   self.window.rootViewController = [[tabViewViewController alloc]init];
+                   self.window.rootViewController = [[getNewToken alloc]init];
                   self.window.backgroundColor = [UIColor whiteColor];
 
                    [self.window makeKeyAndVisible];
