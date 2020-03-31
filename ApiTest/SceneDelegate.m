@@ -17,7 +17,7 @@
     
      UIWindowScene *winRoot = (UIWindowScene*)scene;
                    self.window = [[UIWindow alloc]initWithWindowScene:winRoot];
-                   self.window.rootViewController = [[getNewToken alloc]init];
+                   self.window.rootViewController = [[AlbumGetPhotos alloc]init];
                   self.window.backgroundColor = [UIColor whiteColor];
 
                    [self.window makeKeyAndVisible];

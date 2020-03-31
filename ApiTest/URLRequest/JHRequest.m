@@ -42,7 +42,6 @@ void requestGET(NSString *requestUrl,NSDictionary *parameter,requestError errorB
     
     
 }
-
 //NO2
 void requestPost(NSString *requestUrl,NSDictionary *parameter,requestError errorBlock,requestSuccessful successfulBlock)
 {
@@ -87,7 +86,7 @@ void requestPost(NSString *requestUrl,NSDictionary *parameter,requestError error
                 [[NSNotificationCenter defaultCenter] postNotification:[NSNotification notificationWithName:@"loginNoti" object:nil userInfo:nil]];
                 
                 saveUserInfo(@"loginstates", @"2");
-                
+            
             }
         }
         //         NSString *str = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
@@ -174,19 +173,13 @@ void requestPostImage(NSString *requestUrl,NSDictionary *parameter,NSArray *phot
 void saveImage(UIImage *image,NSString *file){
     //file:文件名
     //image: 图片对象
-    NSData *sizeData = UIImageJPEGRepresentation(image,1);
-
+    NSData *sizeData = UIImageJPEGRepresentation(image,1.0);
     NSData *data = UIImageJPEGRepresentation(image, 0.00000000001);
-
     if (sizeData.length > 8000)
     {
-        
         data = UIImageJPEGRepresentation(image, 0.00000000001);
     }
-    
-    //    NSLog(@"%@",userInfoFile(file));
-    
-    [data writeToFile:userInfoFile1(file) atomically:YES];
+    [data writeToFile:userInfoFile(file) atomically:YES];
     
 }
 -(void)saveImage:(UIImage*)image File:(NSString*)file
